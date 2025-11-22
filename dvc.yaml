@@ -1,0 +1,22 @@
+stages:
+  prepare:
+    cmd: python src/data_prep.py --raw data/raw/telco_churn.csv --params params.yaml
+    deps:
+      - src/data_prep.py
+      - data/raw/telco_churn.csv
+      - params.yaml
+    outs:
+      - data/processed/train.csv
+      - data/processed/test.csv
+
+  train:
+    cmd: python src/train.py --params params.yaml
+    deps:
+      - src/train.py
+      - data/processed/train.csv
+      - data/processed/test.csv
+      - params.yaml
+    outs:
+      - models/telco_churn.pkl
+    metrics:
+      - metrics.json
