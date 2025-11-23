@@ -26,8 +26,8 @@ jobs:
 
       - name: Configure DVC remote (DagsHub)
         env:
-          DAGSHUB_USER: ${{SebaBartos}}
-          DAGSHUB_TOKEN: ${{d9c278be3881afe641d783f4d2df9b5ff2f4e309}}
+          DAGSHUB_USER: SebaBartos
+          DAGSHUB_TOKEN: d9c278be3881afe641d783f4d2df9b5ff2f4e309
         run: |
           dvc remote modify origin auth basic
           dvc remote modify origin user $DAGSHUB_USER
