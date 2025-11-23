@@ -1,7 +1,7 @@
 model:
   type: LogisticRegression
-  C: 0.5
-  max_iter: 125
+  C: 0.3
+  max_iter: 111
 
 split:
   test_size: 0.2
