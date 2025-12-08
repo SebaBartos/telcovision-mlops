@@ -10,7 +10,7 @@ stages:
       size: 873370
     - path: params.yaml
       hash: md5
-      md5: fef13df458cfcd6b272cd9b78c3c1a37
+      md5: 292b6377c2852b7e59e11d20fc0dfd19
       size: 305
     - path: src/data_prep.py
       hash: md5
@@ -38,7 +38,7 @@ stages:
       size: 1324463
     - path: params.yaml
       hash: md5
-      md5: fef13df458cfcd6b272cd9b78c3c1a37
+      md5: 292b6377c2852b7e59e11d20fc0dfd19
       size: 305
     - path: src/train.py
       hash: md5
@@ -47,9 +47,9 @@ stages:
     outs:
     - path: metrics.json
       hash: md5
-      md5: 5fab7cfee103e5a2c3e1cd33190bed08
+      md5: 9257ca2973f5bac047b07016dd2deb83
       size: 59
     - path: models/telco_churn.pkl
       hash: md5
-      md5: 6cc746d8aa6714bf7999f3d6d0a7618a
+      md5: 5dfd500e91998f9c650885bdd132cce3
       size: 2127
